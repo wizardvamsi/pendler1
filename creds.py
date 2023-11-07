@@ -1,4 +1,4 @@
-api_key = 'AIzaSyBIRo90x0PpYc39DEmIruAzODQb8nIMgFg'
+api_key
 
 base_fare = 110  # base fare
 tim_fare_permin = 0.4  # time fare per min
