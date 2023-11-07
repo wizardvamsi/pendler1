@@ -49,13 +49,12 @@ def get_fare1():
         DF5 = (float(Drop_dist)-10)*float(DF5_per)
 
     TDF = DF1 + DF2 + DF3 + DF4 + DF5
-
+    print(TDF)
     if pickup_dist > 3:
         pckup_crg = (float(pickup_dist)-float(pck_limit_cap)) * \
             float(pck_crg_permin)
     else:
         pckup_crg = 0
-
     delay_time_round = round(float(delay_time)/60)
     del_crg = float(delay_time_round)*float(lpf_per)
 
@@ -78,7 +77,6 @@ def get_fare1():
                      float(Tax_GST) + float(peak_crg))
 
     DE = float(Tol_Fare) - float(Ref_crg) - float(Tax_GST)
-
     result = {
         "Sub Total fare :": Sub_TF,
         "Pickup Charges :": pckup_crg,
